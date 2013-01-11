@@ -8,4 +8,4 @@ function poke() {
   }
 }
 
-setInterval(poke, 1000);
+setInterval(poke, 10000);
