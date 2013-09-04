@@ -1,10 +1,7 @@
 function poke() {
-  el = document.getElementsByClassName('uiIconText');
-  for (i in el) {
-    if (el[i].getAttribute('ajaxify').match(/pokeback/)) {
-      el[i].click();
-      console.log('poked!');
-    }
+  var els = $x('//a[contains(@ajaxify, "pokeback")]');
+  for (i in els) {
+    var el = els[i]; el.click();
   }
 }
 
